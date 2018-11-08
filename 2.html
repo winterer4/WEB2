@@ -16,18 +16,32 @@
 </script>
 <style>
 
- 	a 	{ 
-		color:black; 
-  		text-decoration: none;
- 		}
+ 	a 	{color:black; text-decoration: none;}
+ 		
+  h1 { font-size : 500%; text-align : center; }
+  #left {text-align : left;}
+  .right{text-align: right;}
+ 
+ .small{ font-size : xx small;}
+ .larger{font-size : larger;} .xx-large{font-size : xx-large;}
+ .point{font-size : 25pt;}
+ .percent{font-size: 400%;}
  		
 </style>
 
 </head>
 <body>
-	<h1>
-		<a href="index.html">WEB2</a>
+	<h1> <! 그냥 font-size %>
+		<a href="index.html" style ="color:red";>WEB2</a>	
 	</h1>
+	<h1 class="xx-large"; id="left">
+		<a href="index.html" style ="color:blue";>WEB2</a>	
+	</h1>
+	<h1 class="point, right";>
+		<a href="index.html" style ="color:green";>WEB2</a>	
+	</h1>
+	
+	
 	<ol>
 		<li><a href="1.html">HTML</a></li>
 		<li><a href="2.html" style="color:red; text-decoration:underline;">CSS</a></li>
@@ -49,7 +63,7 @@
 -->
 
 
-	<h2>CSS</h2>
+	<h2 class="percent">CSS</h2>
 	<p>
 		Cascading Style Sheets <br> HTML 입문 강의에서 HTML을 웹 사이트에서 화면에 표시되는
 		정보를 약속 한 것이라고 했는데요, CSS는 구체적으로 어떤 스타일로 요소가 표시 되는지를 정하는 규격이라고 할 수 있습니다.
