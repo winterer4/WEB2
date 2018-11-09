@@ -26,9 +26,9 @@
 			}
 	th, td { border:1px gray solid;}
 
-html, body{height: 100%; background-color : #F0F0F0;}
+html, body{ height: 100%; background-color : white;}
 
-.back {heihgt : 300 px; border : 3px solid blue;}
+.back {height : 98%; border : 3px solid blue;}
 
 
 
@@ -42,7 +42,7 @@ html, body{height: 100%; background-color : #F0F0F0;}
 		</div>
 
 	</h1>
-	<div class="back"  style = "  width: auto;  float:left; "  >
+	<div class="back"  style = " width: autopx;  float:left; "  >
 		<ol>
 			<li><a href="1.html">HTML </a></li>
 			<li><a href="2.html">CSS </a></li>
@@ -245,6 +245,43 @@ class에 줄 경우 아래처럼 .을 맨 앞에 붙여 사용하며, 여러 객
 .클래스명{ 속성1:속성값; 속성2:속성값 }
 <br>
 </p>
+
+
+
+
+
+
+<h1>CSS 선택자를 스스로 알아내는 방법</h1>
+
+<br>
+.을 빼고 선택자(selecter)이름만 쓰게 되면 웹페이지에 있는 이름을 선택하게 되는 선택자이다.
+<br>
+.을 붙이면 Class가 .(이름)인 태그를 가르키는 선택자가 된다.
+<br>
+Class는 같은 의도에 따라 grouping 따라 묶는 것을 말한다.
+<br>
+해당 태그에 여러 class를 넣을 수 있다.
+<br>
+같은 Class끼리 우선 순위를 쓰게되면 제일 나중에 class 정의한 것이 활성화 된다.
+<br>
+이것을 해결하기 위해 ID를 넣는다
+<br>
+ID선택자의 경우 Class보다 우선순이가 높다.
+<br>
+선택자 우선 순위는 ID>Class>a 순서이고 같은 우선순위끼리는 나중에 정의한 것이 활성화된다.
+
+<img src="CSS7.jpg" ><br>
+<br>
+우선순위의 이유는 ID 선택자는 한번만 동작하고 Class 선택자 중복되어서 동작 가능하고 a 선택자는 모든 부든에서 활성화하기 때문이다.
+<br>
+<strong>좀더 포괄적인 것보다 구체적인 것이 우선순위를 높게 순위를 두었다.</strong>
+<br>
+
+
+
+
+<a href="https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048">선택자 종류 중요 </a>
+
 
 
 
