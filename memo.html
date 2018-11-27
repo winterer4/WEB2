@@ -24,25 +24,33 @@
 		border-collapse : collapse;
 
 			}
+			
 	th, td { border:1px gray solid;}
 
-html, body{ height: 100%; background-color : white;}
+	html, body{ background-color : white; margin: 0px;}
 
-.back {height : 98%; border : 3px solid blue;}
-
-
+  h1 div{ font-size : 100%; text-align : center;
+   border-bottom : 10px double red; background-color : #000000;
+   padding : 20px; margin: 0;}
+   
+    ol{
+  border-right : 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding : 20px;
+  }
 
 </style>
 
 
 <body>
 	<h1 style = "text-align : center;">
-		<div style = "border : 10px double red; background-color : #000000;" >
+		<div>
 			<a style = "color:yellow;" href="index.html">WEB2</a>
 		</div>
 
 	</h1>
-	<div class="back"  style = " width: autopx;  float:left; "  >
+	<div>
 		<ol>
 			<li><a href="1.html" >HTML</a></li> 
 			<li><a href="2.html"  >CSS</a></li>
@@ -54,7 +62,7 @@ html, body{ height: 100%; background-color : white;}
 	</div>
 <div style = "float:left; margin:10px" > </div>
 
-  <div style ="position : relative; letf: 50px;  display : block ; border : 10px solid #CCDDEE;  float: left; width:auto; height:auto;  ">
+  <div >
 	<h1>"h1~h6" : HTML heading HTML 제목</h1>
 	<h2>Memo</h2>
 
@@ -407,6 +415,60 @@ ID선택자의 경우 Class보다 우선순이가 높다.
 <p>&nbsp;</p>
 
 
+<h2>반응형 디자인과 미디어 쿼리 소개</h2>
+
+<p>&nbsp;</p>
+
+<p>반응형 디자인?</p>
+
+<p>&nbsp;화면의 크기에 따라서 웹페이지의 각 요소들이 반응해서 동작하는 것</p>
+
+<p style="margin:0in;font-family:&quot;Malgun Gothic&quot;;font-size:10.0pt">&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<img src = "CSS19.jpg" width = "600">
+
+<p>&nbsp;</p>
+
+<img src = "CSS20.jpg" width = "600">
+
+<p>&nbsp;</p>
+
+<img src = "CSS21.jpg" width = "600">
+
+<p>&nbsp;반응형으로 넓이가 800이상일때 조건(Query) 성립 </p>
+
+<img src = "CSS22.jpg" width = "600">
+
+<p>&nbsp;조건 성립으로 안보이게 됨</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2>미디어 쿼리를 이용해서 반응형 디자인 구현하기</h2>
+
+<p>&nbsp;</p>
+
+<img src = "CSS23.jpg" width = "600">
+
+<p>&nbsp;</p>
+<img src = "CSS24.jpg" width = "600">
+
+<p>&nbsp;해당 코드(Media query)를 적용 시킨 후 반응형으로 만듬</p>
+
+<p>미디어쿼리가 무엇인가?</p>
+
+<p>다양한 환경에서 웹에서 어떻게 적응했는가?</p>
+
+<p>미디어 쿼리가 필요한 상황에서 어떤 것을 공부해야 되는가?</p>
+
+<p>어떤 공부가 필요한지 아는 과정이였음</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>참고)&nbsp;<a href="https://developer.mozilla.org/ko/docs/Web/Guide/CSS/Media_queries" style="font-size: 13.3333px; font-family: &quot;Malgun Gothic&quot;;">https://developer.mozilla.org/ko/docs/Web/Guide/CSS/Media_queries</a></p>
 
 
 </body>

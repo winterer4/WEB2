@@ -13,11 +13,45 @@
   gtag('config', 'UA-128738670-1');
 </script>
 
+
+<style type="text/css">
+	
+  h1 { font-size : 500%; text-align : center;
+   border-bottom : 1px solid grey;
+   padding : 20px; margin: 0;}
+   
+  ol{
+  border-right : 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding : 20px;
+  }
+  body{margin:0;} 
+  
+    #grid{
+ 	display : grid;
+ 	grid-template-columns : 150px 1fr;
+ 	}
+ 	
+ 	#grid ol{padding-left : 33px}
+ 	#article{padding-left : 25px}
+ 	
+ 	@media(max-width : 800px){
+	 	#grid{display: block;}	
+	 	ol{ border-right : none;}
+	 	h1{border-bottom : none;}
+
+</style>	
+
+
 </head>
 <body>
 	<h1>
 		<a href="index.html">WEB2</a>
 	</h1>
+	
+	<div id="grid">
+	
 	<ol>
 		<li><a href="1.html" >HTML</a></li>
 		<li><a href="2.html"  >CSS</a></li>
@@ -26,6 +60,8 @@
 		<li><a href="memo.html" >memo</a></li>
 		<li><a href="sensor 종류.html" >sensor 종류</a></li>
 	</ol>
+
+	<div id="article">
 
 	<h2>JavaScript</h2>
 	<p>
@@ -46,11 +82,10 @@
 		of web applications. The vast majority of websites use it,[9] and all
 		major web browsers have a dedicated JavaScript engine to execute it.
 
-
-
 	</p>
-
-
+	</div>
+	
+</div>
 
 
 </body>
