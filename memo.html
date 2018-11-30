@@ -17,40 +17,78 @@
 
 <style>
 
+	a:visited{color:purple;}
+	a:hover{color:blue; background-color:yellow;}
+	a:active{color: red; font-weight: bold;}
+ 	a{ color:black; text-decoration: none;}
+
 	table{
 
-		width : 100%;
+		/* width : 100%; */
 		border : 1px gray solid;
-		border-collapse : collapse;
-
+		 border-collapse : collapse; 
+		display: grid;
+		border-width:30px;
+		
+		justify-content: center;
+		
+		
 			}
 			
-	th, td { border:1px gray solid;}
+	th, td { border:1px gray solid; width:100%}
 
 	html, body{ background-color : white; margin: 0px;}
 
   h1 div{ font-size : 100%; text-align : center;
-   border-bottom : 10px double red; background-color : #000000;
+   border-bottom : 10px double silver; background-color : #000000;
    padding : 20px; margin: 0;}
    
-    ol{
-  border-right : 1px solid gray;
+ 
+   
+  div#grid > ol{
+  border-right : 15px groove silver;
   width: 100px;
   margin: 0;
   padding : 20px;
   }
+  body{margin:0;}
+  
+    #grid{
+ 	display : grid;
+ 	grid-template-columns : 150px 1fr;
+ 	}
+ 	
+ 	#grid ol{padding-left : 33px;}
+ 	#article{padding-left : 25px;     padding-bottom: 25px;}
+ 	
+ 	@media(max-width : 800px){
+	 	#grid{display: block;}	
+	 	div#grid > ol{ border-right : none;}
+	 	h1 div{border-bottom : none;}
+	 	div.three{border: none}	 	
+	 	}
+	 	
+	.wrap {
+	display : grid;
+	grid-template-row : auto auto atuo;
+	}
+	
+	.three{ border-top : 10px groove silver;}
+   
 
 </style>
 
-
 <body>
-	<h1 style = "text-align : center;">
+ <section class=".wrap">
+
+	<h1 style = "text-align : center; margin : 0;">
 		<div>
 			<a style = "color:yellow;" href="index.html">WEB2</a>
 		</div>
-
 	</h1>
-	<div>
+	
+	
+	<div id ="grid">
 		<ol>
 			<li><a href="1.html" >HTML</a></li> 
 			<li><a href="2.html"  >CSS</a></li>
@@ -59,10 +97,10 @@
 			<li><a href="memo.html" >memo</a></li>
 			<li><a href="sensor 종류.html" >sensor 종류</a></li>
 		</ol>
-	</div>
-<div style = "float:left; margin:10px" > </div>
+	
 
-  <div >
+
+  <div id="article" >
 	<h1>"h1~h6" : HTML heading HTML 제목</h1>
 	<h2>Memo</h2>
 
@@ -122,7 +160,7 @@
 	<br> a : href="URL" h(hyper text) ref(reference)
 	<br> target="" 링크를 클릭 할 때 창을 어떻게 열 것인가
 	<br> title="" : 해당 링크에 마우스를 갖다대면 link에 대한 설명이 나온다.
-	</p>
+	
 	ex) iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE"
 	 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 	 allowfullscreen>
@@ -133,16 +171,17 @@
 	</div>
 
 
+</div>
 
 
 
-</body>
 
 
+<div class = "three">
 
 <h1>CSS</h1>
 
-<body>
+
 
 <p>
 
@@ -213,7 +252,7 @@ style="color"부분도 declaration이다.
 <br>
 semicolon은 한줄에 description및 효과를 구분하기 위해서 적는 것이다.
 
-</p>
+
 
 
 <h1> 혁명적인 변화</h1>
@@ -278,6 +317,7 @@ Class는 같은 의도에 따라 grouping 따라 묶는 것을 말한다.
 ID선택자의 경우 Class보다 우선순이가 높다.
 <br>
 선택자 우선 순위는 ID>Class>a 순서이고 같은 우선순위끼리는 나중에 정의한 것이 활성화된다.
+<p>&nbsp;</p>
 
 <img src="CSS7.jpg" ><br>
 <br>
@@ -469,6 +509,11 @@ ID선택자의 경우 Class보다 우선순이가 높다.
 <p>&nbsp;</p>
 
 <p>참고)&nbsp;<a href="https://developer.mozilla.org/ko/docs/Web/Guide/CSS/Media_queries" style="font-size: 13.3333px; font-family: &quot;Malgun Gothic&quot;;">https://developer.mozilla.org/ko/docs/Web/Guide/CSS/Media_queries</a></p>
+
+
+</div>
+
+</section>
 
 
 </body>
